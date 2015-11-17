@@ -13,10 +13,15 @@
 				$user = $this->model->checkUser($name,$password);
 				if(!empty($user)) {
 					$this->session->__set("user",$user);
-					$this->output->set_output(json_encode(array("code"=>1,"info"=>"login success")));
-					} else {
-					$this->output->set_output(json_encode(array("code"=>0,"info"=>"login faile")));
+					$this->res(1,"登录成功！");
+				} else {
+					$this->res(2,"登录失败！");
 				}
 			}
 		}
-	}
+		protected function res($code,$info) {
+    	    header('Content-Type:application/json; charset=utf-8');
+    	    $rs = array("code"=>$code,"info"=>$info);
+    	    exit(json_encode($rs));
+        }
+    }

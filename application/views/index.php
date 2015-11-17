@@ -15,6 +15,7 @@ $this->load->view("public/menu");
 $this->load->view("public/content");
 ?>
     </div>
+    <?php $this->load->view("public/modal");?>
     <!-- /#wrapper -->
     <!-- jQuery -->
     <script src="/assets/js/jquery.min.js"></script>
@@ -24,28 +25,12 @@ $this->load->view("public/content");
     <script src="/assets/js/metisMenu.min.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="/assets/js/sb-admin-2.js"></script>
+    <script src="/assets/js/base.js"></script>
 	<script>
 	$(".get").unbind().on("click",function() {
 		var url = $(this).data("url");
 		create_ajax(url,"",$("#content"));
-	    });
-	var create_ajax = function(url,data,content) {
-		var pageContent = content || $("#content-result");
-		$.ajax({
-		type:"POST",
-		url:url,
-		data:data,
-		dataType:"html",
-		cache:false,
-		success : function(res) {
-                pageContent.html(res);
-            },
-            error : function(xhr, ajaxOptions, thrownError) {
-                pageContent.html('<h4>Could not load the requested content.</h4>');
-            }
-		});
-	}
-	
+	});
 	</script>
 </body>
 </html>

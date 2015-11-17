@@ -99,6 +99,12 @@ class MY_Controller extends CI_Controller
 		$result .= '<script>var conditions = JSON.parse(\''.$_conditions.'\');$(".page_nums").unbind().on("click",function() {var nums = $(this).attr("href").substring(2,3); var url = $(".page_info").data("url") + nums;create_ajax(url,{conditions:conditions});});</script>';
 		return $result;
     }
+
+    protected function res($code,$info) {
+    	header('Content-Type:application/json; charset=utf-8');
+    	$rs = array("code"=>$status,"info"=>$info);
+    	exit(json_encode($rs));
+    }
 	
 	private function filter(&$conditions) {
 		foreach($conditions as $key=>$val) {

@@ -5,3 +5,5 @@
 [10-Nov-2015 19:58:15 PRC] PHP Fatal error:  Call to undefined method CI_Session::_get() in D:\work\first-web\application\core\MY_Controller.php on line 19
 [10-Nov-2015 19:59:06 PRC] PHP Fatal error:  Call to undefined function redirect() in D:\work\first-web\application\core\MY_Controller.php on line 20
 [10-Nov-2015 20:34:49 PRC] PHP Fatal error:  Call to undefined function prnit_r() in D:\work\first-web\application\controllers\login.php on line 14
+[17-Nov-2015 20:35:26 PRC] PHP Fatal error:  Call to undefined method Login::res() in D:\work\invoicing\application\controllers\login.php on line 18
+[17-Nov-2015 20:35:32 PRC] PHP Fatal error:  Call to undefined method Login::res() in D:\work\invoicing\application\controllers\login.php on line 18

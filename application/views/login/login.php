@@ -65,6 +65,7 @@
         </div>
     </div>
 
+    <?php $this->load->view("public/modal");?>
     <!-- jQuery -->
     <script src="/assets/js/jquery.min.js"></script>
 	
@@ -76,6 +77,8 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="/assets/js/sb-admin-2.js"></script>
+
+    <script src="/assets/js/base.js"></script>
 	
 	<script type="text/javascript">
 	$(function() {
@@ -89,11 +92,13 @@
 					password:$('input[name="password"]').val()
 				},
 				success:function(res) {
-					var obj = JSON.parse(res);
-					alert(obj.info);
-					if(obj.code == 1)
-					location.href = "/";
+					show_message("登录结果",res.info);
+					if(res.code == 1)
+					    location.href = "/";
 				},
+                error : function(xhr, ajaxOptions, thrownError) {
+                     show_message("错误",'<h4>Could not load the requested content.</h4>');
+                }
 			});			
 	});
 	});
