@@ -1,0 +1,7 @@
+[03-Nov-2015 19:46:31 PRC] PHP Fatal error:  Call to undefined function _lang() in D:\work\first-web\application\views\public\content.php on line 14
+[03-Nov-2015 19:48:00 PRC] PHP Fatal error:  Call to undefined function _lang() in D:\work\first-web\application\views\public\content.php on line 14
+[06-Nov-2015 11:25:59 PRC] PHP Fatal error:  Call to a member function query_by() on a non-object in D:\work\first-web\application\controllers\role.php on line 5
+[06-Nov-2015 18:41:07 PRC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in D:\work\first-web\application\core\MY_Controller.php on line 53
+[10-Nov-2015 19:58:15 PRC] PHP Fatal error:  Call to undefined method CI_Session::_get() in D:\work\first-web\application\core\MY_Controller.php on line 19
+[10-Nov-2015 19:59:06 PRC] PHP Fatal error:  Call to undefined function redirect() in D:\work\first-web\application\core\MY_Controller.php on line 20
+[10-Nov-2015 20:34:49 PRC] PHP Fatal error:  Call to undefined function prnit_r() in D:\work\first-web\application\controllers\login.php on line 14
