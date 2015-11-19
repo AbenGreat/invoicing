@@ -9,8 +9,12 @@
 <input type="text" class="form-control form-control-static input-medium" id="type" value="<?= isset($type) ? $type : ''; ?>">
 </div>
 <div class="alert alert-info">
-<label class="col-sm-2 input-medium">商品价格</label>
-<input type="text" class="form-control form-control-static input-medium" id="price" value="<?= isset($price) ? $price : ''; ?>">
+<label class="col-sm-2 input-medium">商品计划购入价格</label>
+<input type="text" class="form-control form-control-static input-medium" id="coast_price" value="<?= isset($coast_price) ? $coast_price : ''; ?>">
+</div>
+<div class="alert alert-info">
+<label class="col-sm-2 input-medium">商品计划出售价格</label>
+<input type="text" class="form-control form-control-static input-medium" id="sale_price" value="<?= isset($sale_price) ? $sale_price : ''; ?>">
 </div>
 <div class="alert alert-info">
 <label class="col-sm-2 input-medium">备注</label>

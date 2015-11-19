@@ -9,7 +9,7 @@
                                             <th>商品计划购入价格</th>
 											<th>商品计划出售价格</th>
 											<th>备注</th>
-											 <th>操作</th>
+											<th>操作</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -18,7 +18,7 @@
                                             <td><?= $data->id?></td>
                                             <td><?= $data->name?></td>
                                             <td><?= $data->type?></td>
-                                            <td><?= $data->coast_price?></td
+                                            <td><?= $data->coast_price?></td>
                                             <td><?= $data->sale_price?></td>
 											<td><?= $data->remarks?></td>
 											<td><a name="edit" class = "btn" data-id="<?= $data->id?>">编辑</a><a class = "btn" name="remove" data-id="<?= $data->id?>"> 删除</a></td>
