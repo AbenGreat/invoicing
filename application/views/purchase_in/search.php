@@ -1,11 +1,27 @@
 <div class="row">
 	<div class="col-md-12">
 		<div class="fa-item">
-		    <input type="text" name="bank_id" value="" placeholder="银行ID" class="input-medium form-control search-query form-control-static ">
-			<input type="text" name="name" value="" placeholder="银行名称" class="input-medium form-control search-query form-control-static ">
-			<input type="text" name="code" value="" placeholder="银行编码" class="input-medium form-control search-query form-control-static ">
-			<input type="button" value="搜索" class="btn green-meadow input-medium" id="search" />
-            <a href="/bank/edit" class="btn red-intense input-medium ajaxload">创建银行</a>
+		    <input type="text" name="id" value="" placeholder="閲囪喘鍏ュ簱璁㈠崟ID" class="input-medium form-control search-query form-control-static ">
+			<input type="text" name="supplier_id" value="" placeholder="渚涘簲鍟咺D" class="input-medium form-control search-query form-control-static ">
+			<input type="text" name="warehouse_id" value="" placeholder="浠撳簱ID" class="input-medium form-control search-query form-control-static ">
+			<input type="text" name="user_id" value="" placeholder="鎿嶄綔浜篒D" class="input-medium form-control search-query form-control-static ">
+			<input type="button" value="鎼滅储" class="btn green-meadow input-medium" id="search" />
+			<input type="button" value="鍒涘缓鐢ㄦ埛" class="btn red-intense input-medium" id="create" />
 		</div>
 	</div>
 </div>
+<script>
+$("#search").unbind().on("click",function() {
+    create_ajax("purchase_in/page",{
+	    conditions:{
+			id:$("input[name='id']").val(),
+			supplier_id:$("input[name='supplier_id']").val(),
+			warehouse_id:$("input[name='warehouse_id']").val(),
+			user_id:$("input[name='user_id']").val()
+		}
+		});
+	});
+$("#create").unbind().on("click",function() {
+    create_ajax("user/edit",{},$("#content"));
+	});
+</script>

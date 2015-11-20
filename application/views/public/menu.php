@@ -20,10 +20,22 @@
                             <a href="#"><i class="fa fa-download fa-fw"></i>采购管理<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#" class="get" data-url="/purchase/index">采购入库列表</a>
+                                    <a href="#" class="get" data-url="/purchase_in/index">采购入库订单列表</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="get" data-url="/purchase_in/add">创建采购入库订单</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="get" data-url="/purchase_in/check">审核采购入库订单</a>
                                 </li>
 								<li>
-                                    <a href="#" class="get" data-url="/purchase_return/index">采购退货列表</a>
+                                    <a href="#" class="get" data-url="/purchase_return/index">采购退货订单列表</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="get" data-url="/purchase_return/add">创建退货订单订单</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="get" data-url="/purchase_return/check">审核退货订单订单</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
