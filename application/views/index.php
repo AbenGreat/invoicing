@@ -27,10 +27,7 @@ $this->load->view("public/content");
     <script src="/assets/js/sb-admin-2.js"></script>
     <script src="/assets/js/base.js"></script>
 	<script>
-	$(".get").unbind().on("click",function() {
-		var url = $(this).data("url");
-		create_ajax(url,"",$("#content"));
-	});
+        bind_ajax();
 	</script>
 </body>
 </html>
